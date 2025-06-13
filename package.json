@@ -1,11 +1,10 @@
 {
     "name": "Hono-webapp",
     "workspaces": [
-        "frontend",
-        "backend"
+        "apps/*"
     ],
     "scripts": {
-        "frontend:dev": "cd frontend && npm run dev",
-        "backend:dev": "cd backend && npm run dev"
+        "frontend:dev": "cd apps/frontend && npm run dev",
+        "backend:dev": "cd apps/backend && npm run dev"
     }
 }
