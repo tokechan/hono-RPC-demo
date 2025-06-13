@@ -1,0 +1,11 @@
+{
+    "name": "Hono-webapp",
+    "workspaces": [
+        "frontend",
+        "backend"
+    ],
+    "scripts": {
+        "frontend:dev": "cd frontend && npm run dev",
+        "backend:dev": "cd backend && npm run dev"
+    }
+}
