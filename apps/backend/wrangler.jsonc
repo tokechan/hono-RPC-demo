@@ -5,7 +5,8 @@
   "compatibility_date": "2025-06-13",
   "compatibility_flags": [
     "nodejs_compat"
-  ]
+  ],
+
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],
@@ -24,13 +25,13 @@
   //     "bucket_name": "my-bucket"
   //   }
   // ],
-  // "d1_databases": [
-  //   {
-  //     "binding": "MY_DB",
-  //     "database_name": "my-database",
-  //     "database_id": ""
-  //   }
-  // ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "my_db",
+      "database_id": "bd432621-85e1-49c1-9fd6-597904d3ce7c"
+    }
+  ],
   // "ai": {
   //   "binding": "AI"
   // },
