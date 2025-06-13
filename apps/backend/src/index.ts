@@ -17,7 +17,15 @@ const app = new Hono()
    const db = getDb(c.env.DB);
    const allWorks = await db.select().from(works);
    return c.json({ works: allWorks });
-})
+  })
+
+  app.post('/api/works', async (c) => {
+    const db = getDb(c.env.DB);
+    const { title } = await c.req.json<{ title: string }>();
+    const inserted = await db.insert(works).values({ title }).returning();
+    return c.json({ work: inserted[0] });
+   })
+
 
 
 export type AppType = typeof app
